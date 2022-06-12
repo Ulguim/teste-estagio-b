@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "faker": "^6.6.6",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "Faker": "^0.7.2"
+  }
+}
