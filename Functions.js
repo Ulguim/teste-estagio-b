@@ -8,7 +8,7 @@ const people = []
 let names = []
 
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 50; i++) {
     const name = faker.name.findName();
     const birthday = faker.date.birthdate({ min: 1910, max: 2006, mode: 'year' });
     const genre = faker.name.gender();
@@ -51,6 +51,7 @@ function ListClients() {
         console.log(`Cliente: ${list[i]}`)
     }
 }
+
 
 function ListClientsIndex() {
     console.clear()
@@ -123,7 +124,7 @@ const ListFirstNameWithChar = function () {
 }
 
 function ListAdults() {
-    console.clear()
+    
     let listDates = people.map(people => people.birthday)
     let ListNames = people.map(people => people.name)
 
@@ -134,7 +135,7 @@ function ListAdults() {
         let yearBirth = dateBirth.getFullYear();
         let age = currentYear - yearBirth
 
-        if (age > 18) {
+        if (age > 17) {
             console.log(`Cliente: ${ListNames.indexOf(ListNames[i])} ${ListNames[i]}\nIdade: ${age} Anos\n`)
         }
     }
@@ -185,7 +186,7 @@ function LastBuy() {
         let yearPurhase = lastPurchase.getFullYear();
         let PastTime = currentYear - yearPurhase
         // console.log(PastTime)
-        if (PastTime > 10) {
+        if (PastTime > 1) {
             console.log(`Cliente: ${ListNames.indexOf(ListNames[i])} ${ListNames[i]}\nTempo sem compras: ${PastTime} Anos\n`)
         }
     }

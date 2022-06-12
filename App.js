@@ -11,7 +11,7 @@ let option = 0;
 
 while (option != 666) {
 
-    console.log("Administração de Clientes");
+    console.log("\nAdministração de Clientes\n");
     console.log("1  - Filtrar Clientes com Caractere de Início");
     console.log("2  - Lista de Clientes padrão Cliente: NOME_DO_CLIENTE ");
     console.log("3  - Lista de Clientes padrão Cliente INDEX: NOME_DO_CLIENTE");
@@ -24,7 +24,7 @@ while (option != 666) {
     console.log("10 - Total de vendas (Global)");
     console.log("11 - Clientes que não compraram a mais de um ano");
     console.log("12 - Melhores Clientes (mais de 15 Compras)");
-    console.log("13 - Inserção de cliente");
+    console.log("13 - Inserção de cliente\n");
 
     option = + prompt("Selecione uma opção: ")
 
